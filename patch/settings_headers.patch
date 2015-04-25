@@ -1,0 +1,13 @@
+diff -Naur 1/Settings/res/xml/settings_headers.xml 2/Settings/res/xml/settings_headers.xml
+--- 1/Settings/res/xml/settings_headers.xml	2015-02-24 20:57:31.430822846 +0800
++++ 2/Settings/res/xml/settings_headers.xml	2015-02-24 21:02:28.726808989 +0800
+@@ -60,6 +60,9 @@
+         <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
+     </header>
+     <header android:id="@id/system_section" android:title="@string/header_category_system" />
++    <header android:icon="@drawable/ic_oldman_mode_settings" android:title="StockSetting">
++        <intent android:targetPackage="com.android.settings_ex" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings_ex.Settings" />
++    </header>
+     <header android:icon="@drawable/ic_oldman_mode_settings" android:id="@id/oldman_mode_settings" android:title="@string/oldman_mode_entry_name">
+         <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.OldmanModeSettings" />
+     </header>

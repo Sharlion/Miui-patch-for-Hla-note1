@@ -1,0 +1,15 @@
+Android	fstab	#
+<mnt_point>	<type>	#<src>
+The	filesystem	#
+specify	MF_CHECK,	#
+		
+/system	ext4	/dev/block/platform/mtk-msdc.0/by-name/system
+/data	ext4	/dev/block/platform/mtk-msdc.0/by-name/userdata
+/cache	ext4	/dev/block/platform/mtk-msdc.0/by-name/cache
+/boot	emmc	/dev/block/platform/mtk-msdc.0/by-name/boot
+/recovery	emmc	/dev/block/platform/mtk-msdc.0/by-name/recovery
+/protect_f	ext4	/dev/block/platform/mtk-msdc.0/by-name/protect1
+/protect_s	ext4	/dev/block/platform/mtk-msdc.0/by-name/protect2
+/sdcard	vfat	/dev/block/mmcblk0p19
+/outsdcard	vfat	/devices/mtk-msdc.0/11240000.MSDC1
+auto	vfat	/devices/platform/mt_usb
